@@ -10,7 +10,7 @@ export default class BeerCard extends React.Component{
     }
 
     buildIngredients(ingredients){
-        return `ingredients: ${Object.keys(ingredients).join(', ')}`;
+        return `Ingredients: ${Object.keys(ingredients).join(', ')}`;
     }
 
     render() {

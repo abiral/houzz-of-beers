@@ -4,6 +4,7 @@ import './BeerCardSkeleton.css';
 
 export default class BeerCard extends React.Component{
   render() {
+    
     /* Removing data-params from props */
     delete this.props.data;
 

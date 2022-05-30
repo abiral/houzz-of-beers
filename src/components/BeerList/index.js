@@ -43,6 +43,8 @@ export default class BeerList extends React.Component{
             beers = beers.concat(response.data);
             this.setState({ beers, isLoading: false });
         } else {
+
+            /* There are no data to be shown. Thus set isEnded to true */
             this.setState({ isEnded: true, isLoading: false });
         }
     }
@@ -93,13 +95,19 @@ export default class BeerList extends React.Component{
                                 );
                             })}
                         </Row>
-                        <Row>
-                            <Col className="text-center">
-                                <Button className="load-more" onClick={this.paginate}>
-                                    Load More <ChevronCompactDown />
-                                </Button>
-                            </Col>
-                        </Row>
+                        {
+                            this.state.isEnded
+                            ? null
+                            : (
+                                <Row>
+                                    <Col className="text-center">
+                                        <Button className="load-more" onClick={this.paginate}>
+                                            Load More <ChevronCompactDown />
+                                        </Button>
+                                    </Col>
+                                </Row>
+                            )
+                        }
                     </div>
                 </>
             );
