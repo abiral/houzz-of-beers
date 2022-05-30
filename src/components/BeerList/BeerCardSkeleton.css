@@ -1,0 +1,41 @@
+.beer-block.beer-block-skeleton .beer-img{
+    width: 179px;
+    height: 117px;
+}
+
+
+.beer-block.beer-block-skeleton .beer-name{
+    width: 330px;
+    height: 30px;
+    margin: 0 0 0.5rem 10px;
+}
+
+
+.beer-block.beer-block-skeleton .beer-subtitle{
+    width: 330px;
+    height: 20px;
+    margin: 0 0 0.5rem 10px;
+}
+
+
+.beer-block.beer-block-skeleton .beer-desc{
+    width: 330px;
+    height: 48px;
+    margin: 10px 0 1rem 10px;
+}
+
+
+.beer-block.beer-block-skeleton .skeleton {
+    background: #eee;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+}
+
+
+@keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+}

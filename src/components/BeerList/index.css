@@ -1,0 +1,44 @@
+.beer-lists {
+    padding: 10px 0;
+}
+
+.beer-card:hover .card {
+    cursor: pointer;
+    background-color: #f2f8fd;
+}
+
+.beer-name {
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.beer-subtitle {
+    font-size: 18px;
+    color: #f36712;
+}
+
+.beer-img{
+    width: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn.load-more:active,
+.btn.load-more {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #fff;
+    color: #1872ec;
+    border: 0;
+}
+
+.btn.load-more:hover{
+    background-color: #f2f8fd;
+    color: #1872ec;
+}
+
+.btn.load-more svg{
+    fill: #1872ec;
+}
